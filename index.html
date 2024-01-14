@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <link rel="shortcut icon" href="images/game-controller.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="bg-dark bg-opacity-75">
+    <header class="bg-dark">
+        <!-- for background image only -->
+    </header>
+
+    <!-- #region nav-bar -->
+    <nav
+        class="navbar navbar-dark bg-dark navbar-expand-lg container w-75 p-0 rounded-4 overflow-hidden position-sticky top-0 translate-middle-y z-3">
+        <div class="container-fluid bg-opacity-50 bg-primary py-3 px-3">
+            <div class="navbar-brand" href="#">
+                <img class="me-2" src="images/logo-sm.png" alt="Game Reviews">
+                <span class="heavy-font">Game reviews</span>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-uppercase">
+                    <li class="nav-item">
+                        <a id="mmorpg" class="nav-link active" aria-current="page">MMORPG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="shooter" class="nav-link">Shooter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="sailing" class="nav-link">sailing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="permadeath" class="nav-link">permadeath</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="superhero" class="nav-link">superhero</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="pixel" class="nav-link">pixel</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- #endregion -->
+
+    <div id="games"></div>
+    <div id="details"></div>
+
+
+    <div
+        id="loader" class="d-none z-3 position-absolute top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center bg-info bg-opacity-50">
+        <div class="spinner-border text-warning display-1" role="status"></div>
+    </div>
+
+    <script src="js/index.js" type="module"></script>
+</body>
+
+</html>
